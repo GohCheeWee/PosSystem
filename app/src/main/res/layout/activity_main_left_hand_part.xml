@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@color/tiffany_blue"
+        android:id="@+id/activity_main_left_hand_part_header"
+        android:layout_height="?actionBarSize">
+
+        <com.jby.possystem.others.SquareHeightLinearLayout
+            android:layout_width="wrap_content"
+            android:id="@+id/activity_main_left_hand_part_app_logo"
+            android:padding="5dp"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/app_icon"/>
+
+        </com.jby.possystem.others.SquareHeightLinearLayout>
+
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_toEndOf="@+id/activity_main_left_hand_part_app_logo"
+            android:text="@string/activity_main_left_part_label_app_name"
+            android:fontFamily="@string/font_family_condensed"
+            android:gravity="center"
+            android:padding="5dp"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:textColor="@color/white"/>
+
+
+        <com.jby.possystem.others.SquareHeightLinearLayout
+            android:layout_width="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:padding="15dp"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/setting_icon"/>
+
+        </com.jby.possystem.others.SquareHeightLinearLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_marginBottom="?actionBarSize"
+        android:id="@+id/activity_main_left_hand_part_center"
+        android:layout_below="@id/activity_main_left_hand_part_header"
+        android:layout_height="match_parent">
+
+        <com.jby.possystem.others.SquareHeightLinearLayout
+            android:layout_width="match_parent"
+            android:padding="70dp"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/order_not_found_icon"/>
+
+
+        </com.jby.possystem.others.SquareHeightLinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_above="@+id/activity_main_left_hand_part_footer"
+        android:background="@color/transparent_white" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:id="@+id/activity_main_left_hand_part_footer"
+        android:background="@color/white"
+        android:layout_alignParentBottom="true">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_vertical"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.5"
+                android:src="@drawable/delete_icon"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:fontFamily="@string/font_family_condensed"
+                android:text="@string/activity_main_left_hand_part_delete_order"
+                android:layout_height="0dp"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_vertical"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.5"
+                android:src="@drawable/property_icon"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:fontFamily="@string/font_family_condensed"
+                android:text="@string/activity_main_left_hand_part_delete_order"
+                android:layout_height="0dp"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center|end"
+            android:padding="10dp"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:fontFamily="@string/font_family_condensed"
+            android:text="RM 50" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

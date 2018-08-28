@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:id="@+id/activity_main_right_hand_part_header_part"
+        android:layout_height="?actionBarSize">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/add_icon"
+            android:padding="10dp"
+            android:id="@+id/activity_main_right_hand_part_create_category_button"
+            android:background="@color/white"
+            android:layout_weight="1"/>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/grey"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="0dp"
+            android:id="@+id/activity_main_right_hand_category_list_view"
+            android:layout_height="match_parent"
+            android:longClickable="true"
+            android:layout_weight="4"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/default_background"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/activity_main_right_hand_sub_category_list_view"
+            android:layout_width="wrap_content"
+            android:longClickable="true"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="?actionBarSize">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="@string/activity_main_right_hand_part_label_print_setting"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:fontFamily="@string/font_family_condensed"
+            android:textStyle="bold"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="@string/activity_main_right_hand_part_label_payment"
+            android:gravity="center"
+            android:background="@color/tiffany_blue"
+            android:textColor="@color/white"
+            android:fontFamily="@string/font_family_condensed"
+            android:textStyle="bold"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+</LinearLayout>

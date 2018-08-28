@@ -1,3 +1,28 @@
 <resources>
     <string name="app_name">PosSystem</string>
+    <string name="activity_main_left_part_label_app_name">MiniPos</string>
+    <string name="activity_main_left_hand_part_delete_order">Delete</string>
+
+    <string name="activity_main_right_hand_part_label_print_setting">Print Setting</string>
+    <string name="activity_main_right_hand_part_label_payment">Check Out</string>
+    <!--Category dialog-->
+    <string name="activity_main_category_dialog_label_create_category">Create New Category</string>
+    <string name="activity_main_category_dialog_label_edit_category">Edit Category</string>
+    <string name="activity_main_category_dialog_label_name">Name</string>
+    <string name="activity_main_category_dialog_label_store">Store</string>
+    <string name="activity_main_category_dialog_button_confirm">Confirm</string>
+    <string name="activity_main_category_dialog_button_cancel">Cancel</string>
+    <string name="activity_main_category_dialog_hint_name">Category</string>
+    <string name="activity_main_category_long_click_dialog_label_edit">Edit</string>
+    <string name="activity_main_category_long_click_dialog_label_delete">Delete</string>
+    <string name="activity_main_category_long_click_dialog_label_select">Select</string>
+    <string name="activity_main_category_long_click_dialog_cancel">Cancel</string>
+
+    <!--sub category purpose-->
+    <string name="activity_main_category_dialog_label_create_sub_category">Create New Item</string>
+    <string name="activity_main_category_dialog_label_edit_sub_category">Edit Item</string>
+    <string name="activity_main_sub_category_dialog_label_price">Price</string>
+    <string name="activity_main_sub_category_dialog_label_quantity">Quantity</string>
+    <string name="activity_main_sub_category_dialog_label_type">Type</string>
+    <string name="activity_main_category_dialog_button_add_new">Confirm and Add New</string>
 </resources>

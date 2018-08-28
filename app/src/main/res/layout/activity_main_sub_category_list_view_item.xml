@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:padding="1dp"
+    android:orientation="vertical"
+    android:background="@color/default_background"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+<!--adding click effect layout-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            android:padding="5dp"
+            android:orientation="vertical"
+            android:id="@+id/activity_main_sub_category_list_view_item_main_layout"
+            android:background="@drawable/ripple_effect">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:maxLines="1"
+                android:gravity="end"
+                android:textSize="12sp"
+                android:id="@+id/activity_main_sub_category_list_view_item_quantity"
+                android:ellipsize="end"
+                android:text="100"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:gravity="start|center"
+                android:text="hahahaha"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:textColor="@color/grey"
+                android:fontFamily="@string/font_family_condensed"
+                android:id="@+id/activity_main_sub_category_list_view_item_name"/>
+
+            <TextView
+                android:id="@+id/activity_main_sub_category_list_view_item_price"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:gravity="end"
+                android:maxLines="1"
+                android:text="100"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/add_icon"
+            android:visibility="gone"
+            android:id="@+id/activity_main_sub_category_list_view_item_add_button"
+            android:background="@drawable/ripple_effect"
+            android:padding="30dp"/>
+
+        </LinearLayout>
+
+</LinearLayout>
